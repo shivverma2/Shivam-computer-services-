@@ -458,6 +458,215 @@
 </div>
 </div>
 </div>
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Service - IT Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#25c0f4",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101e22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #25c0f4;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-4">
+<div class="flex items-center justify-between max-w-2xl mx-auto">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight">Book a Service</h1>
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">info</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-2xl mx-auto px-4 py-6 pb-32">
+<!-- Service Selection -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold">Select Service</h2>
+<span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full uppercase tracking-wider">Step 1 of 3</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Laptop Repair -->
+<div class="group relative flex flex-col gap-3 p-4 bg-primary/5 dark:bg-primary/5 border-2 border-primary rounded-xl cursor-pointer transition-all hover:bg-primary/10">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-primary fill-1">check_circle</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center bg-primary rounded-lg shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white">laptop_mac</span>
+</div>
+<div>
+<p class="text-base font-bold">Laptop Repair</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Screen, battery, keys</p>
+</div>
+</div>
+<!-- Data Recovery -->
+<div class="group flex flex-col gap-3 p-4 bg-white dark:bg-white/5 border-2 border-transparent rounded-xl cursor-pointer transition-all hover:border-primary/30">
+<div class="w-12 h-12 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300 group-hover:text-primary">database</span>
+</div>
+<div>
+<p class="text-base font-bold">Data Recovery</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">HDD/SSD retrieval</p>
+</div>
+</div>
+<!-- Virus Removal -->
+<div class="group flex flex-col gap-3 p-4 bg-white dark:bg-white/5 border-2 border-transparent rounded-xl cursor-pointer transition-all hover:border-primary/30">
+<div class="w-12 h-12 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300 group-hover:text-primary">security</span>
+</div>
+<div>
+<p class="text-base font-bold">Virus Removal</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Malware &amp; spyware</p>
+</div>
+</div>
+<!-- Custom PC -->
+<div class="group flex flex-col gap-3 p-4 bg-white dark:bg-white/5 border-2 border-transparent rounded-xl cursor-pointer transition-all hover:border-primary/30">
+<div class="w-12 h-12 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300 group-hover:text-primary">memory</span>
+</div>
+<div>
+<p class="text-base font-bold">Custom PC Build</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Assembly &amp; setup</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Details -->
+<section class="mb-8">
+<h2 class="text-lg font-bold mb-4">Service Details</h2>
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Device Model &amp; Specs</label>
+<input class="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-500" placeholder="e.g. MacBook Pro M1 2021" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-500 dark:text-slate-400">Describe the Issue</label>
+<textarea class="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-500" placeholder="Please describe what's wrong with your device..." rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between p-4 bg-primary/5 rounded-lg border border-primary/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<div>
+<p class="text-sm font-bold">Urgent Service</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Repair within 24 hours</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-slate-300 peer-focus:outline-none dark:bg-slate-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Image Upload (Optional) -->
+<section class="mb-8">
+<h2 class="text-lg font-bold mb-4">Reference Photos</h2>
+<div class="grid grid-cols-4 gap-2">
+<div class="aspect-square rounded-lg border-2 border-dashed border-slate-200 dark:border-white/10 flex flex-col items-center justify-center cursor-pointer hover:bg-primary/5 hover:border-primary transition-all">
+<span class="material-symbols-outlined text-slate-400">add_a_photo</span>
+<span class="text-[10px] mt-1 text-slate-400 font-medium">Add Photo</span>
+</div>
+<div class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up of a cracked laptop screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqj2PBGShrJVTR2sOxifITQYF1oEyG33OHBI4cKNgveJIajbgGJqDh9E1uqu-QSWVMyMLVVIbC5QEHRVOWvHAp2BDcy3qi_TGzr9y45BUkKTq5HS5t-ObBqcDvdQRIGxKc6IJJqFx1Ok5EO1Y4QA9vipOvhDvO3CX7gr5Z_shNUCv8-JJ8GRGklDtuvKDzPsc9oja-sKot6LRHnLdPOUiwhya3lK2NfSGjpMlokwSBz51MpKaI5gReZjM_lOrK8_aCdiQY-WQfVNM')"></div>
+<button class="absolute top-1 right-1 size-5 bg-red-500 text-white rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10 px-4 pt-4 pb-8 z-50">
+<div class="max-w-2xl mx-auto flex flex-col gap-4">
+<div class="flex items-center justify-between px-2">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Estimated Total</span>
+<div class="flex items-center gap-1">
+<span class="text-2xl font-bold text-primary">₹2,499.00</span>
+<span class="material-symbols-outlined text-primary text-sm animate-pulse">info</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-xs text-slate-500 dark:text-slate-400 block italic">Excl. parts &amp; tax</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span>Place Order</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</footer>
+<!-- Nav Bar -->
+<div class="fixed top-0 left-0 hidden">
+<!-- Kept for component requirement compliance but placed in layout appropriately above -->
+</div>
+<!-- Component Mapping for BottomNavBar -->
+<nav class="hidden">
+<div class="flex gap-2 border-t border-[#223f49] bg-[#182d34] px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#90bccb]" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white" href="#">
+<span class="material-symbols-outlined">build</span>
+<p class="text-xs font-medium">Services</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#90bccb]" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<p class="text-xs font-medium">Orders</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#90bccb]" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+</nav>
+</body></html>        
+        
 </footer>
 <!-- Mobile Sticky Contact -->
 <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 p-3 grid grid-cols-2 gap-3 z-50">
